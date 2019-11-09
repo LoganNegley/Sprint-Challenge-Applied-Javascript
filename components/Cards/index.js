@@ -26,6 +26,13 @@ cardsPromise.then(response => {
   console.log(response.data.articles);
   const info = response.data.articles;
   cardContainer.appendChild(newCard(info));
+
+  console.log(Object.entries(response.data.articles));
+  const array = Object.entries(response.data.articles);
+
+  array.forEach(item => {
+    console.log(item[1]);
+  });
 });
 
 const cardContainer = document.querySelector(".cards-container");
@@ -54,6 +61,6 @@ function newCard(obj) {
   // Added textContent
   headline.textContent = obj.bootstrap[0].headline;
   author.textContent = obj.bootstrap[0].authorName;
-  image.src = obj.bootstrap[0].authorPhoto;
+
   return card;
 }
