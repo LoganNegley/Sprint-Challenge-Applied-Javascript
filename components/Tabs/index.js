@@ -11,7 +11,6 @@
 const promise = axios.get("https://lambda-times-backend.herokuapp.com/topics");
 
 promise.then(response => {
-  console.log(response);
   const topics = response.data.topics;
 
   //   for (i = 0; i < topics.length; i++) {
@@ -21,7 +20,6 @@ promise.then(response => {
   //   }
 
   topics.forEach(item => {
-    console.log(item);
     const entryPoint = document.querySelector(".topics");
     const tab = newTab(item);
     entryPoint.append(tab);
