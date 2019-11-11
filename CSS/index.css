@@ -246,3 +246,19 @@ img {
   text-align: center;
   margin: 0 2rem;
 }
+#home-main-container .project-section-container .project-cards-container {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+}
+#home-main-container .project-section-container .project-cards-container .project-card {
+  width: 45%;
+  margin: 2rem;
+}
+#home-main-container .project-section-container .project-cards-container .project-card h3 {
+  font-size: 2.5rem;
+}
+#home-main-container .contact-me-container {
+  font-size: 2rem;
+  width: 50%;
+}
