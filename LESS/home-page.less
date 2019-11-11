@@ -3,10 +3,14 @@
     .main-content-container{
         width:73%;
         background-color:@secondary-color;
+        font-weight: bold;
 
         h2{
             margin-top:3rem;
             text-align: center;
+            font-family: 'Yeon Sung', cursive;
+            font-size:4rem;
+            text-decoration: underline;
         }
 
     .skills-container{
@@ -33,8 +37,8 @@
         }
         .fab, .fas{
             font-size: 5rem;
-            color:gray;
-            opacity: 0.75;
+            color:@main-color;
+            // opacity: 0.75;
             margin-top:2rem;
         }
         p{
@@ -63,9 +67,22 @@
 
             h3{
                 font-size:2.5rem;
+                margin-top:3rem;
+                margin-bottom:2rem;
             }
         }
     }
+    }
+
+    // About Me
+    .about-me-container{
+        margin:3rem;
+        p{
+            margin-top:2rem;
+        }
+        span{
+            font-weight: bold;
+        }
     }
 
     // Contact Section
@@ -74,13 +91,14 @@
         width:75%; 
         height:300px;
         background-color:lightgray;
-        margin:0 auto;
+        margin:2rem auto;
 li{
-    margin-top:3rem;
+    margin:2rem 0;
     text-align: center;
 }
         a{
             color:@main-color;
+            text-decoration: none;
         }
 
     }

@@ -230,10 +230,14 @@ hr {
 #home-main-container .main-content-container {
   width: 73%;
   background-color: #c9c9c9;
+  font-weight: bold;
 }
 #home-main-container .main-content-container h2 {
   margin-top: 3rem;
   text-align: center;
+  font-family: 'Yeon Sung', cursive;
+  font-size: 4rem;
+  text-decoration: underline;
 }
 #home-main-container .main-content-container .skills-container {
   display: flex;
@@ -256,8 +260,7 @@ hr {
 #home-main-container .main-content-container .skills-container .skill-card .fab,
 #home-main-container .main-content-container .skills-container .skill-card .fas {
   font-size: 5rem;
-  color: gray;
-  opacity: 0.75;
+  color: #110269;
   margin-top: 2rem;
 }
 #home-main-container .main-content-container .skills-container .skill-card p {
@@ -279,18 +282,30 @@ hr {
 }
 #home-main-container .project-section-container .project-cards-container .project-card h3 {
   font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+#home-main-container .about-me-container {
+  margin: 3rem;
+}
+#home-main-container .about-me-container p {
+  margin-top: 2rem;
+}
+#home-main-container .about-me-container span {
+  font-weight: bold;
 }
 #home-main-container .contact-me-container {
   font-size: 2rem;
   width: 75%;
   height: 300px;
   background-color: lightgray;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 #home-main-container .contact-me-container li {
-  margin-top: 3rem;
+  margin: 2rem 0;
   text-align: center;
 }
 #home-main-container .contact-me-container a {
   color: #110269;
+  text-decoration: none;
 }
