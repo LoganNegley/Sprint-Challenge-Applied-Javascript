@@ -192,6 +192,13 @@ hr {
   border-radius: 50%;
   margin: 1.5rem 5rem;
 }
+@media (max-width: 800px) {
+  #home-main-container .side-bar img {
+    width: 85%;
+    margin-left: 1.5rem;
+    height: 150px;
+  }
+}
 #home-main-container .side-bar h1,
 #home-main-container .side-bar .position {
   text-align: center;
@@ -208,11 +215,24 @@ hr {
   margin: 1.5rem 0;
   margin-left: 2rem;
 }
+@media (max-width: 800px) {
+  #home-main-container .side-bar .links-container a {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 #home-main-container .side-bar .links-container #portfolio-link {
   margin-bottom: 6rem;
 }
+@media (max-width: 800px) {
+}
 #home-main-container .side-bar .links-container #about-me-link {
   margin-bottom: 7rem;
+}
+@media (max-width: 800px) {
+  #home-main-container .side-bar .links-container #about-me-link {
+    margin-bottom: 8rem;
+  }
 }
 #home-main-container .side-bar .fab {
   margin: 0 1.5rem;
@@ -222,7 +242,7 @@ hr {
 #home-main-container .side-bar .icons {
   text-align: center;
   margin-bottom: 1rem;
-  margin-top: -3rem;
+  margin-top: -1rem;
 }
 #home-main-container .side-bar .icons p {
   font-size: 2rem;
@@ -276,9 +296,21 @@ hr {
   width: 45%;
   margin: 2rem;
 }
+@media (max-width: 800px) {
+  #home-main-container .project-section-container .project-cards-container .project-card {
+    width: 45%;
+    margin: 1rem;
+  }
+}
 #home-main-container .project-section-container .project-cards-container .project-card img {
   width: 85%;
   height: 200px;
+}
+@media (max-width: 800px) {
+  #home-main-container .project-section-container .project-cards-container .project-card img {
+    width: 100%;
+    height: 150px;
+  }
 }
 #home-main-container .project-section-container .project-cards-container .project-card h3 {
   font-size: 2.5rem;
