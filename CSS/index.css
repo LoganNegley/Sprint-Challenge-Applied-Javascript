@@ -186,6 +186,11 @@ hr {
   position: sticky;
   top: 0;
 }
+@media (max-width: 500px) {
+  #home-main-container .side-bar {
+    width: 33%;
+  }
+}
 #home-main-container .side-bar img {
   width: 65%;
   height: 200px;
@@ -224,7 +229,11 @@ hr {
 #home-main-container .side-bar .links-container #portfolio-link {
   margin-bottom: 6rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
+  #home-main-container .side-bar .links-container #portfolio-link {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+  }
 }
 #home-main-container .side-bar .links-container #about-me-link {
   margin-bottom: 7rem;
@@ -232,6 +241,12 @@ hr {
 @media (max-width: 800px) {
   #home-main-container .side-bar .links-container #about-me-link {
     margin-bottom: 8rem;
+  }
+}
+@media (max-width: 500px) {
+  #home-main-container .side-bar .links-container #about-me-link {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
   }
 }
 #home-main-container .side-bar .fab {
@@ -244,6 +259,11 @@ hr {
   margin-bottom: 1rem;
   margin-top: -1rem;
 }
+@media (max-width: 500px) {
+  #home-main-container .side-bar .icons {
+    margin-top: 0;
+  }
+}
 #home-main-container .side-bar .icons p {
   font-size: 2rem;
 }
@@ -252,6 +272,11 @@ hr {
   background-color: #c9c9c9;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  #home-main-container .main-content-container {
+    width: 67%;
+  }
+}
 #home-main-container .main-content-container h2 {
   margin-top: 3rem;
   text-align: center;
@@ -259,11 +284,21 @@ hr {
   font-size: 4rem;
   text-decoration: underline;
 }
+@media (max-width: 800px) {
+  #home-main-container .main-content-container h2 {
+    margin-top: 1rem;
+  }
+}
 #home-main-container .main-content-container .skills-container {
   display: flex;
   flex-flow: wrap row;
   margin-bottom: 3rem;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  #home-main-container .main-content-container .skills-container {
+    display: block;
+  }
 }
 #home-main-container .main-content-container .skills-container .skill-card {
   width: 33%;
@@ -273,9 +308,21 @@ hr {
   margin-left: 1rem;
   text-align: center;
 }
+@media (max-width: 800px) {
+  #home-main-container .main-content-container .skills-container .skill-card {
+    margin: 1rem 1rem;
+    width: 100%;
+    border-right: none;
+  }
+}
 #home-main-container .main-content-container .skills-container .skill-card h3 {
   font-size: 3rem;
   text-align: center;
+}
+@media (max-width: 800px) {
+  #home-main-container .main-content-container .skills-container .skill-card h3 {
+    font-size: 2rem;
+  }
 }
 #home-main-container .main-content-container .skills-container .skill-card .fab,
 #home-main-container .main-content-container .skills-container .skill-card .fas {
@@ -302,6 +349,11 @@ hr {
     margin: 1rem;
   }
 }
+@media (max-width: 500px) {
+  #home-main-container .project-section-container .project-cards-container .project-card {
+    width: 100%;
+  }
+}
 #home-main-container .project-section-container .project-cards-container .project-card img {
   width: 85%;
   height: 200px;
@@ -312,10 +364,26 @@ hr {
     height: 150px;
   }
 }
+@media (max-width: 500px) {
+  #home-main-container .project-section-container .project-cards-container .project-card img {
+    width: 100%;
+  }
+}
 #home-main-container .project-section-container .project-cards-container .project-card h3 {
   font-size: 2.5rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  #home-main-container .project-section-container .project-cards-container .project-card h3 {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  #home-main-container .project-section-container .project-cards-container .project-card p {
+    text-align: center;
+  }
 }
 #home-main-container .about-me-container {
   margin: 3rem;
@@ -333,9 +401,20 @@ hr {
   background-color: lightgray;
   margin: 2rem auto;
 }
+@media (max-width: 500px) {
+  #home-main-container .contact-me-container {
+    width: 100%;
+  }
+}
 #home-main-container .contact-me-container li {
   margin: 2rem 0;
   text-align: center;
+}
+@media (max-width: 800px) {
+  #home-main-container .contact-me-container li {
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
 }
 #home-main-container .contact-me-container a {
   color: #110269;

@@ -1,6 +1,8 @@
 #home-main-container{
     .display();
 
+ 
+
 .side-bar{
     background-color:@main-color;
     width:27%;
@@ -9,6 +11,9 @@
     position: sticky;
     top:0;
 
+    @media @mobile{
+    width:33%;
+    }
 
 
 
@@ -32,9 +37,6 @@
     .links-container{
         margin-top:3.5rem;
 
-        // @media @tablet{
-        //     margin-top:3rem;
-        // }
     
     a{
         font-size: 2rem;
@@ -52,8 +54,9 @@
     #portfolio-link{
         margin-bottom:6rem;
 
-        @media @tablet{
-            // margin-bottom:2.5rem;
+        @media @mobile{
+            margin-bottom:1rem;
+            margin-top:1.5rem;
         }
     }
     #about-me-link{
@@ -61,6 +64,11 @@
 
         @media @tablet{
             margin-bottom:8rem;
+        }
+
+        @media @mobile{
+            margin-bottom:2rem;
+            margin-top:1rem;
         }
     }
     }
@@ -76,7 +84,9 @@
         margin-bottom:1rem;
         margin-top:-1rem;
 
-
+@media @mobile{
+    margin-top:0;
+}
         p{
             font-size:2rem;
         }
