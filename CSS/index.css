@@ -1,7 +1,6 @@
 .display {
   display: flex;
   flex-flow: wrap row;
-  justify-content: center;
 }
 html,
 body,
@@ -168,4 +167,49 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+#home-main-container {
+  display: flex;
+  flex-flow: wrap row;
+}
+#home-main-container .side-bar {
+  background-color: #110269;
+  width: 27%;
+  color: white;
+}
+#home-main-container .side-bar img {
+  width: 65%;
+  height: 200px;
+  border-radius: 50%;
+  margin: 3rem 5rem;
+}
+#home-main-container .side-bar h1,
+#home-main-container .side-bar .position {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#home-main-container .side-bar .links-container {
+  margin-top: 5rem;
+}
+#home-main-container .side-bar .links-container a {
+  font-size: 2rem;
+  text-decoration: none;
+  display: block;
+  color: white;
+  margin: 1.5rem 0;
+}
+#home-main-container .side-bar .links-container #portfolio-link {
+  margin-bottom: 6rem;
+}
+#home-main-container .side-bar .links-container #about-me-link {
+  margin-bottom: 10rem;
+}
+#home-main-container .side-bar .fab {
+  margin: 0 1.5rem;
+  color: white;
+  font-size: 2.5rem;
+}
+#home-main-container .main-content-container {
+  width: 73%;
+  background-color: #c9c9c9;
 }
