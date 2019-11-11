@@ -213,3 +213,36 @@ img {
   width: 73%;
   background-color: #c9c9c9;
 }
+#home-main-container .main-content-container h2 {
+  margin-top: 3rem;
+  text-align: center;
+}
+#home-main-container .main-content-container .skills-container {
+  display: flex;
+  flex-flow: wrap row;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+#home-main-container .main-content-container .skills-container .skill-card {
+  width: 33%;
+  border-right: #6a696b solid 2px;
+  border-bottom: #6a696b solid 2px;
+  margin: 3rem;
+  margin-left: 1rem;
+  text-align: center;
+}
+#home-main-container .main-content-container .skills-container .skill-card h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+#home-main-container .main-content-container .skills-container .skill-card .fab,
+#home-main-container .main-content-container .skills-container .skill-card .fas {
+  font-size: 5rem;
+  color: gray;
+  opacity: 0.75;
+  margin-top: 2rem;
+}
+#home-main-container .main-content-container .skills-container .skill-card p {
+  text-align: center;
+  margin: 0 2rem;
+}
