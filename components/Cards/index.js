@@ -23,16 +23,38 @@ const cardsPromise = axios.get(
 );
 
 cardsPromise.then(response => {
-  console.log(response.data.articles);
-  const info = response.data.articles;
-  cardContainer.appendChild(newCard(info));
+  console.log(response);
 
-  console.log(Object.entries(response.data.articles));
-  const array = Object.entries(response.data.articles);
+  const infoObject = response.data.articles;
+  console.log(infoObject.javascript);
 
-  array.forEach(item => {
-    console.log(item[1]);
+  infoObject.javascript.forEach(item => {
+    cardContainer.appendChild(newCard(item));
   });
+
+  infoObject.bootstrap.forEach(item => {
+    cardContainer.appendChild(newCard(item));
+  });
+
+  infoObject.technology.forEach(item => {
+    cardContainer.appendChild(newCard(item));
+  });
+
+  infoObject.jquery.forEach(item => {
+    cardContainer.appendChild(newCard(item));
+  });
+
+  infoObject.node.forEach(item => {
+    cardContainer.appendChild(newCard(item));
+  });
+
+  // infoObject.forEach(element => {
+  //   element.forEach(item => {
+  //     console.log(item);
+  //     cardContainer.appendChild(newCard(item));
+  //     // console.log((myInfo = item));
+  //   });
+  // });
 });
 
 const cardContainer = document.querySelector(".cards-container");
@@ -42,16 +64,18 @@ function newCard(obj) {
   const headline = document.createElement("div");
   const author = document.createElement("div");
   const imgContainer = document.createElement("div");
-  const image = document.createElement("img");
+  const authorImage = document.createElement("img");
   const byAuthor = document.createElement("span");
 
   // Structure
   card.appendChild(headline);
   card.appendChild(author);
-  author.appendChild(imgContainer);
-  imgContainer.appendChild(image);
-  author.appendChild(byAuthor);
 
+  author.appendChild(byAuthor);
+  author.appendChild(imgContainer);
+  imgContainer.appendChild(authorImage);
+
+  console.log(author);
   // Classes
   card.classList.add("card");
   headline.classList.add("headline");
@@ -59,8 +83,19 @@ function newCard(obj) {
   imgContainer.classList.add("img-container");
 
   // Added textContent
-  headline.textContent = obj.bootstrap[0].headline;
-  author.textContent = obj.bootstrap[0].authorName;
-
+  headline.textContent = obj.headline;
+  authorImage.src = `${obj.authorPhoto}`;
+  byAuthor.textContent = obj.authorName;
+  console.log(card);
   return card;
 }
+
+// <div class="card">
+//   <div class="headline">{Headline of article}</div>
+//   <div class="author">
+//     <div class="img-container">
+//       <img src={url of authors image} />
+//     </div>
+//     <span>By {authors name}</span>
+//   </div>
+// </div>
