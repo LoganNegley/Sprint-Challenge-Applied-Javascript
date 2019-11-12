@@ -1,97 +1,89 @@
-#home-main-container{
-    .display();
+#home-main-container {
+  .display();
 
- 
-
-.side-bar{
-    background-color:@main-color;
-    width:27%;
-    color:white;
-    height:100%;
+  .side-bar {
+    background-color: @main-color;
+    width: 27%;
+    color: white;
+    height: 100%;
     position: sticky;
-    top:0;
+    top: 0;
 
-    @media @mobile{
-    width:33%;
+    @media @mobile {
+      width: 33%;
     }
 
+    img {
+      width: 65%;
+      height: 240px;
+      border-radius: 50%;
+      margin: 1.5rem 7rem;
 
-
-    img{
-        width:65%;
-        height: 200px;
-        border-radius: 50%;
-        margin:1.5rem 5rem;
-
-        @media @tablet{
-            width:85%;
-            margin-left:1.5rem;
-            height:150px;
-        }
+      @media @tablet {
+        width: 85%;
+        margin-left: 1.5rem;
+        height: 150px;
+      }
     }
-    h1,.position{
-        text-align: center;
-        margin-bottom:1rem;
+    h1,
+    .position {
+      text-align: center;
+      margin-bottom: 1rem;
     }
 
-    .links-container{
-        margin-top:3.5rem;
+    .links-container {
+      margin-top: 3.5rem;
 
-    
-    a{
-        font-size: 2rem;
+      a {
+        font-size: 3rem;
         text-decoration: none;
-        display:block;
-        color:white;
-        margin:1.5rem 0;
-        margin-left:2rem;
+        display: block;
+        color: white;
+        margin: 1.5rem 0;
+        margin-left: 2rem;
 
-        @media @tablet{
-            margin-top:0;
-            margin-bottom:0;
+        @media @tablet {
+          margin-top: 0;
+          margin-bottom: 0;
         }
-    }
-    #portfolio-link{
-        margin-bottom:6rem;
+      }
+      #portfolio-link {
+        margin-bottom: 6rem;
 
-        @media @mobile{
-            margin-bottom:1rem;
-            margin-top:1.5rem;
+        @media @mobile {
+          margin-bottom: 1rem;
+          margin-top: 1.5rem;
         }
-    }
-    #about-me-link{
-        margin-bottom:7rem;
+      }
+      #about-me-link {
+        margin-bottom: 7rem;
 
-        @media @tablet{
-            margin-bottom:8rem;
+        @media @tablet {
+          margin-bottom: 8rem;
         }
 
-        @media @mobile{
-            margin-bottom:2rem;
-            margin-top:1rem;
+        @media @mobile {
+          margin-bottom: 2rem;
+          margin-top: 1rem;
         }
-    }
+      }
     }
 
-    .fab{
-        margin:0 1.5rem;
-        color:white;
-        font-size: 2.5rem;
-        
+    .fab {
+      margin: 0 1.5rem;
+      color: white;
+      font-size: 2.5rem;
     }
-    .icons{
-        text-align: center;
-        margin-bottom:1rem;
-        margin-top:-1rem;
+    .icons {
+      text-align: center;
+      margin-bottom: 8rem;
 
-@media @mobile{
-    margin-top:0;
-}
-        p{
-            font-size:2rem;
-        }
+      @media @mobile {
+        margin-top: 0;
+      }
+      p {
+        font-size: 2rem;
+      }
     }
-}
-
-
+  }
 }

@@ -1,166 +1,202 @@
-#home-main-container{
+#home-main-container {
+  .main-content-container {
+    width: 73%;
+    background-color: @secondary-color;
+    font-weight: bold;
 
-    .main-content-container{
-        width:73%;
-        background-color:@secondary-color;
-        font-weight: bold;
+    @media @mobile {
+      width: 67%;
+    }
 
-        @media @mobile{
-            width:67%;
-        }
+    h2 {
+      margin-top: 3rem;
+      text-align: center;
+      font-family: "Yeon Sung", cursive;
+      font-size: 4rem;
+      text-decoration: underline;
 
-        h2{
-            margin-top:3rem;
-            text-align: center;
-            font-family: 'Yeon Sung', cursive;
-            font-size:4rem;
-            text-decoration: underline;
+      @media @tablet {
+        margin-top: 1rem;
+      }
+    }
 
-            @media @tablet{
-                margin-top:1rem;
-            }
-        }
+    .skills-container {
+      .display();
+      margin-bottom: 3rem;
+      justify-content: center;
 
-    .skills-container{
-        .display();
-        margin-bottom:3rem;
-        justify-content: center;
+      @media @mobile {
+        display: block;
+      }
 
-@media @mobile{
-    display:block;
-}
-   
-        
-    .skill-card{
-        width:33%;
-        border-right:#6a696b solid 2px;
-        border-bottom:#6a696b solid 2px;
-        margin:3rem;
-        margin-left:1rem;
+      .skill-card {
+        width: 33%;
+        border-right: #6a696b solid 2px;
+        border-bottom: #6a696b solid 2px;
+        margin: 3rem;
+        margin-left: 1rem;
         text-align: center;
 
-        @media @tablet{
-            
-            margin:1rem 1rem;
-            width:100%;
-            border-right:none;
+        @media @tablet {
+          margin: 1rem 1rem;
+          width: 100%;
+          border-right: none;
         }
 
-     
-        h3{
-            font-size:3rem;
-            text-align: center;
+        h3 {
+          font-size: 3rem;
+          text-align: center;
 
-            @media @tablet{
-                font-size: 2rem;
+          @media @tablet {
+            font-size: 2rem;
+          }
+        }
+        .fab,
+        .fas {
+          font-size: 5rem;
+          color: @main-color;
+          margin-top: 2rem;
+        }
+        p {
+          text-align: center;
+          margin: 0 2rem;
+        }
+      }
+    }
+  }
+
+  // Project section
+  .project-section-container {
+    .project-cards-container {
+      .display();
+      justify-content: space-between;
+
+      .project-card {
+        width: 45%;
+        margin: 2rem;
+
+        .what-was-used {
+          p {
+            font-size: 1.5rem;
+            padding-bottom: 0;
+            text-decoration: underline;
+          }
+          ul {
+            list-style-type: square;
+            list-style-position: inside;
+            margin-bottom: 1rem;
+            padding: 0;
+            li {
+              font-size: 1.5rem;
             }
-       
+          }
         }
-        .fab, .fas{
-            font-size: 5rem;
-            color:@main-color;
-            margin-top:2rem;
-        }
-        p{
-            text-align: center;
-            margin:0 2rem
-        }
-    }
-    }
-    }
 
-    // Project section
-    .project-section-container{
-
-    .project-cards-container{
-        .display();
-        justify-content: space-between;
-
-        
-
-        .project-card{
-            width:45%;
-            margin:2rem;
-
-        
-            @media @tablet{
-                width:45%;
-                margin:1rem;
-                }
-                @media @mobile{
-                    width:100%;
-                }
-
-            img{
-                width:85%;
-                height:200px;
-
-                @media @tablet{
-                    width:100%;
-                    height:150px;
-                }
-
-                @media @mobile{
-                    width:100%;
-                }
+        .myRole {
+          p {
+            font-size: 1.5rem;
+            padding-bottom: 0;
+            text-decoration: underline;
+          }
+          ul {
+            list-style-type: square;
+            list-style-position: inside;
+            margin-bottom: 1rem;
+            padding: 0;
+            li {
+              font-size: 1.5rem;
             }
-
-            h3{
-                font-size:2.5rem;
-                margin-top:3rem;
-                margin-bottom:2rem;
-
-                @media @mobile{
-                    text-align: center;
-                    margin-top:1.5rem;
-                }
-            }
-            p{
-                @media @mobile{
-                    text-align: center;
-                }
-            }
-
-            
+          }
         }
-    }
-    }
 
-    // About Me
-    .about-me-container{
-        margin:3rem;
-        p{
-            margin-top:2rem;
-        }
-        span{
-            font-weight: bold;
-        }
-    }
-
-    // Contact Section
-    .contact-me-container{
-        font-size:2rem;
-        width:75%; 
-        height:300px;
-        background-color:lightgray;
-        margin:2rem auto;
-
-        @media @mobile{
-            width:100%;
-        }
-li{
-    margin:2rem 0;
-    text-align: center;
-
-    @media @tablet{
-        margin-bottom:0;
-        margin-top:1rem;
-    }
-}
-        a{
-            color:@main-color;
+        .project-links {
+          a {
+            font-size: 1.25rem;
             text-decoration: none;
+            color: black;
+            margin-right: 2rem;
+
+            &:hover {
+              color: red;
+            }
+          }
         }
 
+        @media @tablet {
+          width: 45%;
+          margin: 1rem;
+        }
+        @media @mobile {
+          width: 100%;
+        }
+
+        img {
+          width: 85%;
+          height: 200px;
+
+          @media @tablet {
+            width: 100%;
+            height: 150px;
+          }
+
+          @media @mobile {
+            width: 100%;
+          }
+        }
+
+        h3 {
+          font-size: 2.5rem;
+          margin-top: 3rem;
+          margin-bottom: 2rem;
+
+          @media @mobile {
+            text-align: center;
+            margin-top: 1.5rem;
+          }
+        }
+        p {
+          @media @mobile {
+            text-align: center;
+          }
+        }
+      }
     }
+  }
+
+  // About Me
+  .about-me-container {
+    margin: 3rem;
+    p {
+      margin-top: 2rem;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+
+  // Contact Section
+  .contact-me-container {
+    font-size: 2rem;
+    width: 75%;
+    height: 300px;
+    background-color: lightgray;
+    margin: 2rem auto;
+
+    @media @mobile {
+      width: 100%;
+    }
+    li {
+      margin: 2rem 0;
+      text-align: center;
+
+      @media @tablet {
+        margin-bottom: 0;
+        margin-top: 1rem;
+      }
+    }
+    a {
+      color: @main-color;
+      text-decoration: none;
+    }
+  }
 }
